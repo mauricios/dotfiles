@@ -1,0 +1,24 @@
+[user]
+	name = Mauricio S
+	email = msanchez@aplyca.com
+[alias]
+        a = "!git add -A . && git commit -am"
+        b = branch -lvv --color
+        c = checkout
+        d = difftool --color --word-diff
+        f = fetch --all -pv
+        l = log --graph --pretty=format:'%C(red)%h..%Creset %C(auto)%d%Creset %s %C(blue)[%cd %an]%Creset' --abbrev-commit --date=iso
+        m = merge
+        p = push
+        r = remote -v
+        s = status -sb
+        t = "!tig status"
+        u = pull -v
+        bs = for-each-ref --sort=-committerdate --format="%(committerdate:relative)%09%(refname:short)"
+        undo = reset --hard HEAD
+        new = !git checkout master && git fetch && git pull && git checkout
+        ship = "!f() { git push -u $1 $2:$2; }; f"
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false

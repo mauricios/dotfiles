@@ -1,5 +1,5 @@
 [user]
-	name = Mauricio S
+	name = Mauricio Sánchez
 	email = msanchez@aplyca.com
 [alias]
         a = "!git add -A . && git commit -am"
